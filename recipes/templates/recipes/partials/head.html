@@ -73,6 +73,7 @@
         body {
             font-size: 1.6rem;
             font-family: var(--font-primary);
+            background:var(--color-gray-1);
         }
 
         h1,h2,h3,h4,h5,h6 {
@@ -93,6 +94,16 @@
         .main-logo-icon{
             margin-right: 2rem;
         }
+
+        .search-form {
+            border: .2rem solid var(--color-primary-dark);
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: 1rem;
+            border-radius: .4rem;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
         .container {
             max-width: 144rem;
             margin: 0 auto;
@@ -101,5 +112,37 @@
         .main-header-container{
             background: var(--color-primary-dark);
         }
+
+    .search-input,
+    .search-button {
+        border: none;
+        background: none;
+        outline: none;
+        transition: all 300ms ease-in-out;
+    }
+    .search-input{
+        width: 100%;
+        padding-right: 3rem;
+    }
+
+    .search-button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+    }
+    .search-button{
+        outline: 1px var(--color-primary);
+    }
+
+    .search-form:focus-within {
+        border-color: var(--color-primary);
+        background: var(--color-white);
+    }
+
+    .search-form:focus-within .search-button{
+        color: var(--color-primary);
+    }
+
     </style>
 </head>
